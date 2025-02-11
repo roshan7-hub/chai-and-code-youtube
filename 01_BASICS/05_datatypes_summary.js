@@ -38,3 +38,29 @@ console.log(`Hello babu bhaiyaa`)
 
 console.log(typeof heros)
 //javascript dynamicaly typed language
+
+// *****************memory Allocation*******************//
+ //primitive(in stack)  
+/*
+let myname=`Roshan`
+let anothername= myname
+anothername=`Raja ji`
+
+console.log(myname)
+console.log(anothername)
+*/
+//in this it take as a copy
+
+//non_primitive(in heap)
+let userOne={
+   email:`Roshan@gmail.com`,
+   upi:`Roshan@okcici`
+}
+let userTwo=userOne
+
+userTwo.email=`Rajaji@gmail.com`
+
+console.log(userOne.email)
+console.log(userTwo.email)
+
+//it take as reference ,it changes origin value 
